@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const apples = {name: 'Apples'};
+    const bananas = {name: 'Bananas'};
+    const oranges = {name: 'Oranges'};
+    const fruits = new Map();
+    fruits.set(apples, 500);
+    fruits.set(bananas, 300);
+    fruits.set(oranges, 200);
+    fruits.get(apples);/*The key is an object (apples), not a string ("apples"):*/
+    fruits.entries();/*返回 Map 对象中键/值对的数组。*/
+    fruits.keys();/*返回键的数组*/
+    fruits.values();
+    fruits.clear();/*清除map*/
+    fruits.delete(apples); /*删除由键指定的元素。*/
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p{
+            border: 1px solid black;
+            border-radius: 5px;/*圆角边框*/
+        }
+        div{
+            /*外边距*/
+            border: 1px solid black;
+            text-align: center;
+            /*当浏览器窗口小于元素的宽度时，上面这个 <div> 会发生问题。浏览器会将水平滚动条添加到页面。
+            在这种情况下，使用 max-width 可以改善浏览器对小窗口的处理。*/
+            max-width: 500px;
+            /*该div最大为500 当浏览器缩小时div也缩小*/
+           /* margin: 100px 150px 100px 80px;!*上右下左*!*/
+            margin: auto;/*border: 1px solid black;*/
+
+        }
+        p.red{
+
+            margin: inherit;/*继承父类div的属性*/
+        }
+
+    </style>
+</head>
+<body>
+  <p>JackyLove</p>
+<div>gorgeous
+    <br>
+    <p class="red">ss</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*overflow 属性指定在元素的内容太大而无法放入指定区域时是剪裁内容还是添加滚动条。*/
+        /*overflow 属性仅适用于具有指定高度的块元素。*/
+        /*如果将值设置为 scroll，溢出将被裁剪，并添加滚动条以便在框内滚动。请注意，这将在水平和垂直方向上添加一个滚动条（即使您不需要它）：*/
+        /*如果使用 hidden 值，溢出会被裁剪，其余内容被隐藏：*/
+        div {
+            background-color: #eee;
+            width: 200px;
+            height: 50px;
+            border: 1px dotted black;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+<div>当您想更好地控制布局时，可以使用 overflow 属性。overflow 属性规定如果内容溢出元素框会发生什么情况。</div>
+
+</body>
+</html>

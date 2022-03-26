@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+      /*通过使用 Object.values()，任何 JavaScript 对象都可以被转换为数组：*/
+      const person = {
+          name: "Bill",
+          age: 19,
+          city: "Seattle"
+      };
+
+      const myArray = Object.values(person);
+      document.getElementById("demo").innerHTML = String(myArray);
+      /*任何 JavaScript 对象都可以使用 JavaScript 函数 JSON.stringify() 进行字符串化（转换为字符串）：*/
+      const person1 = {
+          name: "Bill",
+          age: 19,
+          city: "Seattle"
+      };
+
+      let myString = JSON.stringify(person1);/*{"name":"John","age":50,"city":"New York"}*/
+      document.getElementById("demo").innerHTML = myString;
+      /*也可以对 JavaScript 数组进行字符串化：*/
+
+
+      var apples ={name:"ss"}; /*可构建这种对象apple作为键值对*/
+      var sss=new Map([[apples,500],[],[]])
+      sss.get(apples);/*The key is an object (apples), not a string ("apples"):*/
+
+    </script>
+</body>
+</html>
